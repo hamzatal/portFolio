@@ -1,0 +1,270 @@
+/*
+Name : Hamza Al-Tal
+Email : hamza.t.a.altal@gmail.com
+Github: https://github.com/hamzatal
+Linkedin: https://www.linkedin.com/in/hamza-tal/
+Date : 19/9/2024
+Project : Portfolio
+Version : 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0, 17, 61);
+}
+
+/* Home Content */
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+}
+
+/* Line */
+.hr-lines {
+    position: relative;
+    max-width: 500px;
+    margin-top: -320px;
+    text-align: center;
+}
+
+.hr-lines:before,
+.hr-lines:after {
+    content: " ";
+    height: 3px;
+    width: 110px; 
+    background: #00abf0;
+    display: block;
+    position: absolute;
+    top: 50%; 
+}
+
+.hr-lines:before {
+    left: 380px; 
+}
+
+.hr-lines:after {
+    right: 380px; 
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* NavBar */
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .5s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+/* Contact Me */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 6rem;
+}
+
+.title {
+    border-radius: 500px;
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input */
+.contact-container {
+    position: absolute;
+    top: 15rem;
+    right: 5rem; 
+    margin: 1rem;
+}
+
+.contact form {
+    max-width: 25rem; 
+    text-align: center;
+}
+
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact form .input-box .input-field {
+    position: relative;
+    width: 49%; 
+    margin: .4rem 0; 
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1rem; 
+    font-size: 1.0rem; 
+    color: #ededed;
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid #00abf0;
+}
+
+.contact form .textarea-field textarea {
+    height: 10rem; 
+}
+
+/* Submit Button */
+.btn-box a {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 130px;
+    padding: 5px;
+    margin: 10px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #00abf0;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+/* Contact Me - Icons */
+.icons-container {
+    position: fixed;
+    top: 55%; 
+    left: 0; 
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    margin: 35px;
+}
+
+.icons-container a {
+    color: #00abf0;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.icons-container a:hover {
+    color: #ededed;
+}
+
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .header {
+        padding: 15px 20px;
+    }
+
+    .navbar a {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    .contact-container {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0 auto; 
+        padding: 20px; 
+    }
+
+    .contact form {
+        max-width: 90%; 
+    }
+
+    .btn-box a {
+        width: 100%; 
+    }
+
+    .icons-container {
+        top: 70%; 
+        left: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .contact form .textarea-field textarea {
+        height: 8rem; 
+    }
+
+    .btn-box a {
+        font-size: 18px; 
+    }
+
+    .icons-container {
+        gap: 15px; 
+    }
+}
