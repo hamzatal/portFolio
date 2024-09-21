@@ -15,30 +15,24 @@ Version : 1.0
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-
 body {
     background: rgb(0, 17, 61);
     color: #ededed;
 }
-
 .header {
     position: fixed;
     top: 0;
     width: 100%;
     padding: 20px 50px;
-    background: transparent;
     display: flex;
     justify-content: space-between;
-    z-index: 100;
 }
-
 .logo {
     font-size: 25px;
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
 }
-
 .navbar a {
     font-size: 18px;
     color: #ededed;
@@ -47,16 +41,13 @@ body {
     margin-left: 35px;
     transition: .5s;
 }
-
 .navbar a:hover,
 .navbar a.active {
     color: #00abf0;
 }
-
 .name {
     color: #00abf0;
 }
-
 .home {
     height: 100vh;
     background: url(../images/bg.png) no-repeat;
@@ -67,28 +58,17 @@ body {
     align-items: center;
     padding: 0 10%;
 }
-
-.home-content {
-    max-width: 600px;
-}
-
 .home-content h1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
 }
-
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
     color: #00abf0;
+    margin-bottom: 40px;
 }
-
-.home-content p {
-    margin: 20px 0 40px;
-    font-size: 16px;
-}
-
 .home-content .btn-box {
     display: flex;
     justify-content: space-between;

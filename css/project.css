@@ -87,15 +87,12 @@ body {
     padding-bottom: 6rem;
 }
 
-.title {
+.text {
     border-radius: 500px;
-    position: relative;
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .boxes {
