@@ -112,7 +112,7 @@ body {
 /* Input */
 .contact-container {
     position: absolute;
-    top: 15rem;
+    top: 13rem;
     right: 5rem; 
     margin: 1rem;
 }
@@ -146,8 +146,10 @@ body {
     border: .2rem solid #00abf0;
 }
 
+/* Your message size */
+
 .contact form .textarea-field textarea {
-    height: 10rem; 
+    height: 9rem; 
 }
 
 /* Submit Button */
@@ -195,7 +197,7 @@ body {
 /* Contact Me - Icons */
 .icons-container {
     position: fixed;
-    top: 55%; 
+    top: 50%; 
     left: 0; 
     transform: translateY(-50%);
     display: flex;
@@ -214,6 +216,30 @@ body {
 .icons-container a:hover {
     color: #ededed;
 }
+
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    background: rgb(0, 17, 61);
+    color: #ededed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+.footer .footer-content .logo {
+    font-size: 15px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Media Query */
 
 @media (max-width: 768px) {
     .home-content h1 {
@@ -268,3 +294,4 @@ body {
         gap: 15px; 
     }
 }
+
